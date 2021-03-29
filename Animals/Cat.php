@@ -173,9 +173,7 @@ class Cat
      */
     public function walk()
     {
-        // si taux de fatigue de mon chat < 100
         if ($this->getTiredness() < self::TIREDNESS_MAX) {
-            // alors j'ajoute 10 à current taux de fatigue
             $this->setTiredness($this->getTiredness() + self::TIREDNESS_INCR);
         } 
         if ($this->getTiredness() > self::TIREDNESS_MAX) {
